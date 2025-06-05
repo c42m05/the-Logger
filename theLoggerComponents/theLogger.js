@@ -102,7 +102,7 @@ if(script.logToScreen) {
  * - Configure settings.
  * - Override global `print` to route logs through `theLogger`.
  */
-const Module = require("./Modules/Logger");
+const Module = require("Logger.js"); // Depends on the file structure
 const PrintModes = Module.PrintModes;
 const Settings = new Module.Settings();
     Settings.originalPrint = print;
